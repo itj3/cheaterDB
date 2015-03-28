@@ -1,0 +1,7 @@
+CREATE TABLE Department(
+	dept_id number(3) CONSTRAINT dept_pk PRIMARY KEY DEFERRABLE INITIALLY IMMEDIATE,
+	chair varchar(21),
+	title varchar(100) CONSTRAINT dept_title_nn NOT NULL DEFERRABLE INITIALLY IMMEDIATE,
+	col_id number(4),
+	CONSTRAINT dept_col_fk FOREIGN KEY(col_id) REFERENCES College(col_id) DEFERRABLE INITIALLY IMMEDIATE
+);

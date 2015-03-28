@@ -1,0 +1,6 @@
+CREATE TABLE Class(
+	cs_id number(4),
+	stu_id number(7),
+	CONSTRAINT cl_stu_fk FOREIGN KEY(stu_id) REFERENCES Student(stu_id) DEFERRABLE INITIALLY IMMEDIATE,
+	CONSTRAINT cl_cs_fk FOREIGN KEY(cs_id) REFERENCES CourseSection(cs_id) DEFERRABLE INITIALLY IMMEDIATE
+);
