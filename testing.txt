@@ -1,4 +1,0 @@
-something cool;
-add student table;
-!this should give me a merge conflict error.
-oracle stuff;
