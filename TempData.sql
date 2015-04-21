@@ -41,27 +41,28 @@ ALTER TABLE Department Enable CONSTRAINT dept_col_fk;
 
 ALTER TABLE CourseSection DISABLE CONSTRAINT cs_int_fk;
 
-Insert into CourseSection (cs_id, cs_date, int_id) values (001 , 'Auguest-2014', 002966680);
-Insert into CourseSection (cs_id, cs_date, int_id) values (002 , 'Auguest-2014', 002972392);
-Insert into CourseSection (cs_id, cs_date, int_id) values (003 , 'Auguest-2014', 003009643);
-Insert into CourseSection (cs_id, cs_date, int_id) values (004 , 'Auguest-2014', 003396813);
-Insert into CourseSection (cs_id, cs_date, int_id) values (005 , 'Auguest-2014', 002972392);
-Insert into CourseSection (cs_id, cs_date, int_id) values (006 , 'Auguest-2014', 008413910);
-Insert into CourseSection (cs_id, cs_date, int_id) values (007 , 'Auguest-2014', 003396813);
-Insert into CourseSection (cs_id, cs_date, int_id) values (008 , 'Auguest-2014', 004126121);
-Insert into CourseSection (cs_id, cs_date, int_id) values (009 , 'Auguest-2014', 008413910);
-Insert into CourseSection (cs_id, cs_date, int_id) values (010 , 'Auguest-2014', 009781503);
+Insert into CourseSection (cs_id, cs_date, int_id) values (001 , '1-Aug-2014', 002966680);
+Insert into CourseSection (cs_id, cs_date, int_id) values (002 , '1-Aug-2014', 002972392);
+Insert into CourseSection (cs_id, cs_date, int_id) values (003 , '1-Aug-2014', 003009643);
+Insert into CourseSection (cs_id, cs_date, int_id) values (004 , '1-Aug-2014', 003396813);
+Insert into CourseSection (cs_id, cs_date, int_id) values (005 , '1-Aug-2014', 002972392);
+Insert into CourseSection (cs_id, cs_date, int_id) values (006 , '1-Aug-2014', 008413910);
+Insert into CourseSection (cs_id, cs_date, int_id) values (007 , '1-Aug-2014', 003396813);
+Insert into CourseSection (cs_id, cs_date, int_id) values (008 , '1-Aug-2014', 004126121);
+Insert into CourseSection (cs_id, cs_date, int_id) values (009 , '1-Aug-2014', 008413910);
+Insert into CourseSection (cs_id, cs_date, int_id) values (010 , '1-Aug-2014', 009781503);
 
-Insert into CourseSection (cs_id, cs_date, int_id) values (011 , '1-2015', 004126121);
-Insert into CourseSection (cs_id, cs_date, int_id) values (012 , '1-2015', 007509407);
-Insert into CourseSection (cs_id, cs_date, int_id) values (013 , '1-2015', 009781503);
-Insert into CourseSection (cs_id, cs_date, int_id) values (014 , '1-2015', 009297086);
-Insert into CourseSection (cs_id, cs_date, int_id) values (015 , '1-2015', 007509407);
-Insert into CourseSection (cs_id, cs_date, int_id) values (016 , '1-2015', 002966680);
-Insert into CourseSection (cs_id, cs_date, int_id) values (017 , '1-2015', 009297086);
-Insert into CourseSection (cs_id, cs_date, int_id) values (018 , '1-2015', 003009643);
-Insert into CourseSection (cs_id, cs_date, int_id) values (019 , '1-2015', 002966680);
-Insert into CourseSection (cs_id, cs_date, int_id) values (020 , '1-2015', 003009643);
+Insert into CourseSection (cs_id, cs_date, int_id) values (011 , '1-Dec-2015', 004126121);
+Insert into CourseSection (cs_id, cs_date, int_id) values (012 , '1-Dec-2015', 007509407);
+Insert into CourseSection (cs_id, cs_date, int_id) values (013 , '1-Dec-2015', 009781503);
+Insert into CourseSection (cs_id, cs_date, int_id) values (014 , '1-Dec-2015', 009297086);
+Insert into CourseSection (cs_id, cs_date, int_id) values (015 , '1-Dec-2015', 007509407);
+Insert into CourseSection (cs_id, cs_date, int_id) values (016 , '1-Dec-2015', 002966680);
+Insert into CourseSection (cs_id, cs_date, int_id) values (017 , '1-Dec-2015', 009297086);
+Insert into CourseSection (cs_id, cs_date, int_id) values (018 , '1-Dec-2015', 003009643);
+Insert into CourseSection (cs_id, cs_date, int_id) values (019 , '1-Dec-2015', 002966680);
+Insert into CourseSection (cs_id, cs_date, int_id) values (020 , '1-Dec-2015', 003009643);
+
 
 ALTER TABLE CourseSection Enable CONSTRAINT cs_int_fk;
 
