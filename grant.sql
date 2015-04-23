@@ -9,8 +9,8 @@ Grant ALL ON ClassSchedule to mlh395;
 Grant ALL ON Course to mlh395;
 Grant ALL ON Accusation to mlh395;
 --Views
-Grant ALL ON /*name*/ to mlh395;
-Grant ALL ON /*name*/ to mlh395;
+Grant ALL ON allaccu to mlh395;
+Grant ALL ON pending to mlh395;
 
 --Gives execution privileges on all functions and procedures.
 --needs the names functions and procedures
