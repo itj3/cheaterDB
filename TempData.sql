@@ -71,7 +71,7 @@ ALTER TABLE CourseSection Enable CONSTRAINT cs_int_fk;
 ALTER TABLE ClassSchedule DISABLE CONSTRAINT cl_stu_fk; 
 ALTER TABLE ClassSchedule DISABLE CONSTRAINT cl_cs_fk;
 
-Insert into ClassSchedule (cs_id, stu_id) values ( 011, 1234567);
+Insert into ClassSchedule (cs_id, stu_id) values ( 013, 1234567);
 Insert into ClassSchedule (cs_id, stu_id) values ( 020, 1234567);
 Insert into ClassSchedule (cs_id, stu_id) values ( 001, 1234567);
 Insert into ClassSchedule (cs_id, stu_id) values ( 010, 1234567);
@@ -123,13 +123,15 @@ ALTER TABLE Course Enable CONSTRAINT cou_dept_fk;
 
 --Accusation Data Insert
 
+ALTER TABLE Accusation DISABLE CONSTRAINT acc_cs_fk;
 ALTER TABLE Accusation DISABLE CONSTRAINT acc_stu_fk;
 ALTER TABLE Accusation DISABLE CONSTRAINT acc_int_fk;
 
-Insert into Accusation (acc_id, acc_date, type, evidence, status, stu_id, int_id) values ( 0001, '12-Dec-2014', 'Copy', 'Student had identical answers to homework as another student. Answers were wrong', 'Confirmed', 1357986, 003009643);
-Insert into Accusation (acc_id, acc_date, type, evidence, status, stu_id, int_id) values ( 0002, '11-Nov-2014', 'Plagiarize', 'Students paper came back with quotes from wikipedia after running paper through safeassign', 'Pending', 9876543, 007509407);
-Insert into Accusation (acc_id, acc_date, type, evidence, status, stu_id, int_id) values ( 0003, '14-Feb-2015', 'Plagiarize', 'Students paper came back with quotes from wikipedia after running paper through safeassign', 'Pending', 9876543, 002972392);
-Insert into Accusation (acc_id, acc_date, type, evidence, status, stu_id, int_id) values ( 0004, '12-Mar-2015', 'Copy', 'Student had identical answers to homework as another student. Answers were wrong', 'Confirmed', 1234567, 003009643);
+Insert into Accusation (acc_id, acc_date, type, evidence, status, cs_id, stu_id, int_id) values ( 0001, '12-Dec-2014', 'Copy', 'Student had identical answers to homework as another student. Answers were wrong', 'Confirmed', 013, 1357986, 003009643);
+Insert into Accusation (acc_id, acc_date, type, evidence, status, cs_id, stu_id, int_id) values ( 0002, '11-Nov-2014', 'Plagiarize', 'Students paper came back with quotes from wikipedia after running paper through safeassign', 'Pending', 009, 9876543, 007509407);
+Insert into Accusation (acc_id, acc_date, type, evidence, status, cs_id, stu_id, int_id) values ( 0003, '14-Feb-2015', 'Plagiarize', 'Students paper came back with quotes from wikipedia after running paper through safeassign', 'Pending', 012, 9876543, 002972392);
+Insert into Accusation (acc_id, acc_date, type, evidence, status, cs_id, stu_id, int_id) values ( 0004, '12-Mar-2015', 'Copy', 'Student had identical answers to homework as another student. Answers were wrong', 'Confirmed', 013, 1234567, 003009643);
 
+ALTER TABLE Accusation Enable CONSTRAINT acc_cs_fk;
 ALTER TABLE Accusation Enable CONSTRAINT acc_stu_fk;
 ALTER TABLE Accusation Enable CONSTRAINT acc_int_fk;

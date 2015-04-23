@@ -4,8 +4,10 @@ CREATE TABLE Accusation(
 	type varchar(10) CONSTRAINT acc_type_nn NOT NULL DEFERRABLE INITIALLY IMMEDIATE,
 	evidence varchar(1000) CONSTRAINT acc_evid_nn NOT NULL DEFERRABLE INITIALLY IMMEDIATE,
 	status varchar(25),
+	cs_id number(4),
 	stu_id number(7),
 	int_id number(7),
+	CONSTRAINT acc_cs_fk FOREIGN KEY(cs_id) REFERENCES CourseSection(cs_id) DEFERRABLE INITIALLY IMMEDIATE,
 	CONSTRAINT acc_int_fk FOREIGN KEY(int_id) REFERENCES Instructor(int_id) DEFERRABLE INITIALLY IMMEDIATE,
 	CONSTRAINT acc_stu_fk FOREIGN KEY(stu_id) REFERENCES Student(stu_id) DEFERRABLE INITIALLY IMMEDIATE
 );
